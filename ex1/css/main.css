@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    height: 100%;
+}
+
+.container {
+    text-align:center;
+    display: inline-block;
+    clear: none;
+}
+
+.leftDiv {
+    text-align:center;
+    display: inline-block;
+    width: 100%;
+    margin: 0;
+    padding: 0 0 5% 0;
+    background-color: rgb(122, 42, 42);
+    color: rgb(249, 249, 249);
+}
+
+.headerBar {
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+
+.logo {
+    width: 30%;
+    height: auto;
+    padding: 0;
+    margin: 2%;
+    position: relative;
+    
+}
+
+.navLinks {
+    padding: 0;
+    margin: 0;
+    width: 60%;
+    position: absolute;
+    top: 25%;
+    right: 2%;
+    text-align: right;
+}
+
+.navLinks > a:link, .navLinks > a:visited, .navLinks > a:hover, .navLinks > a:active{
+    text-decoration: none;
+    color: rgb(249, 249, 249);
+    font-size: 75%;
+    padding: 0 4% 0 4%;
+}
+
+.missionStatement {
+    margin: 5% 0 5% 0;
+    font-size: 225%;
+}
+
+.content > text {
+    text-align: center;
+    font-size: 80%;
+}
+
+.rightDiv {
+    text-align:center;
+    display: inline-block;
+    height: auto;
+    width: 80%;
+    height: auto;
+    margin: 0px;
+    padding: 0;
+}
+
+.googleImg {
+    width: 20%;
+    height: auto;
+}
