@@ -4,7 +4,6 @@ body {
 }
 
 .container {
-    text-align:center;
     display: inline-block;
     clear: none;
 }
@@ -39,7 +38,7 @@ body {
     margin: 0;
     width: 60%;
     position: absolute;
-    top: 25%;
+    top: 20%;
     right: 2%;
     text-align: right;
 }
@@ -48,11 +47,11 @@ body {
     text-decoration: none;
     color: rgb(249, 249, 249);
     font-size: 75%;
-    padding: 0 4% 0 4%;
+    padding: 0 0 0 4%;
 }
 
 .missionStatement {
-    margin: 10% 0 5% 0;
+    margin: 2% 0 5% 0;
     font-size: 225%;
 }
 
@@ -64,14 +63,66 @@ body {
 .rightDiv {
     text-align:center;
     display: inline-block;
-    height: auto;
-    width: 80%;
-    height: auto;
     margin: 0px;
     padding: 0;
+}
+
+.navLinks2 {
+    position: relative;
+    float: right;
+    width: 35%;
+    padding: 2% 2% 0 0;
+}
+
+.navLinks2 > a, .navLinks2 > a:visited, .navLinks2 > a:hover, .navLinks2 > a:active{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 75%;
+    margin: 0 0 0 10%;
+    float: right;
+}
+
+.signUpTopper {
+    margin: 7% 0 3% 0;
+}
+
+.signUp {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 125%;
+    margin: 0 2% 0 2%;
+}
+
+.newAccountInput {
+    padding: 0 15% 2% 15%;
+}
+
+.signUpInput {
+    width: 90%;
+    margin: 0 0 2% 0;
+}
+
+.captcha {
+}
+
+.disclaimer {
+    font-size: 75%;
+}
+
+.checkBoxDiv {
+    margin: 0 0 3% 0;
+}
+
+.signInButtonDiv {
+    display: inline-block;
+    position: center;
+}
+
+.signUpButton {
+    width: 40%;
 }
 
 .googleImg {
     width: 20%;
     height: auto;
+    float: left;
 }
