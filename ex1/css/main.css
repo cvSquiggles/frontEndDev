@@ -25,7 +25,7 @@ body {
 }
 
 .logo {
-    width: 30%;
+    width: 25%;
     height: auto;
     padding: 0;
     margin: 2%;
@@ -162,5 +162,17 @@ body {
 @media only screen and (min-width: 365px) {
     .newAccountInput{
         padding: 0 15% 0 15%;
+    }
+}
+
+@media only screen and (min-width: 400px) {
+    .logo {
+        width: 20%;
+    }
+}
+
+@media only screen and (min-width: 500px) {
+    .container {
+        display: grid;
     }
 }
