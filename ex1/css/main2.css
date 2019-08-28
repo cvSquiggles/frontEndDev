@@ -14,42 +14,181 @@ body {
 
 .container {
     display: grid;
+    min-height: 520px;
+    min-width: 290px;
     height: 100vh;
     width: 100vw;
     grid-template-columns: repeat(8, 1fr);
-    grid-auto-rows: 50% 50%;
+    grid-template-rows:  7% 40% 3% 42% 8%;
 }
 
-.leftDiv {
+.headerBar {
+    display: flex;
     grid-column: 1/9;
+    grid-row: 1/2;
     justify-items: center;
     align-items: center;
     background-color: rgb(122, 42, 42);
     color: rgb(249, 249, 249);
 }
 
-.headerBar {
-    display: flex;
-    justify-items: center;
-    align-items: center;
-}
-
 .logo {
     width: 25%;
     height: auto;
-    padding: 0;
-    margin: 2%;
-    position: relative;
-    
+    padding: 1% 0 0 2%;
+
 }
 
-.rightDiv {
+.navLinks > a:link, .navLinks > a:visited, .navLinks > a:hover, .navLinks > a:active {
+    text-decoration: none;
+    color: rgb(249, 249, 249);
+    margin-right: 4%;
+    float: right;
+    font-size: 75%;
+}
+
+.navLinks {
+    width: 100%;
+}
+
+.content {
+    display: inline-block;
+    text-align: center;
     grid-column: 1/9;
+    grid-row: 2/3;
+    height: 100%;
+    background-color: rgb(122, 42, 42);
+    color: rgb(249, 249, 249);
+}
+
+.missionStatement {
+    margin: 5% 0 2% 0;
+    font-size: 200%;
+}
+
+.missionDetail {
+    margin: 0 0 5% 0;
+    font-size: 80%;
+}
+
+.navLinks2 > a:link, .navLinks2 > a:visited, .navLinks2 > a:hover, .navLinks2 > a:active {
+    text-decoration: none;
+    margin-right: 8%;
+    color: rgb(0 0 0);
+    float: right;
+    font-size: 80%;
+}
+
+.navLinks2 {
+    width: 100%;
+    grid-column: 6/9;
+    grid-row: 3/4;
+    padding: 2% 2% 0 0;
+}
+
+.content2 {
+    display: inline-block;
+    text-align: center;
+    grid-column: 2/8;
+    grid-row: 4/5;
+}
+
+.disclaimer {
+    font-size: 75%;
+}
+
+.signUpTopper {
+    margin-bottom: 4%;
+}
+
+.signUpInput {
+    border: solid .2px;
+    margin-bottom: 2%;
+    width: 80%;
+}
+
+.signUpButtonDiv {
+    display: flex;
+    grid-column: 2/8;
+    grid-row: 5/6;
+}
+
+.signUpButton {
+    display: inline-block;
+    grid-column: 2/5;
+    font-size: 80%;
+    grid-row: 5/6;
+    margin: 7% 8% 7% 8%;
+}
+
+.gSignUpButton {
+    display: inline-block;
+    grid-column: 5/8;
+    grid-row: 5/6;
+    font-size: 80%;
+    margin: 7% 8% 7% 8%;
+}
+
+.gAuthSpan {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.captchaDiv {
+    margin: 0 8% 4% 8%;
+}
+
+.checkBoxDiv {
+    margin-bottom: 4%;
 }
 
 .googleImg {
-    width: 10%;
-    height: auto;
+    width: 15%;
     margin: 0 5% 0 0;
 }
 
+@media only screen and (min-width: 364px) {
+    .signUpInput {
+        width: 75%;
+    }
+
+    .captchaDiv {
+        margin: 0 14% 4% 14%;
+    }
+
+    .signUpButton {
+        margin: 7% 8% 7% 20%;
+    }
+    
+    .gSignUpButton {
+        margin: 7% 20% 7% 8%;
+    }
+    
+}
+
+@media only screen and (min-width: 430px) {
+    .container {
+        min-height: 535px;
+    }
+
+    .signUpButton {
+        margin: 5% 8% 5% 20%;
+    }
+    
+    .gSignUpButton {
+        margin: 5% 20% 5% 8%;
+    }
+}
+
+@media only screen and (min-width: 530px) {
+    .googleImg {
+        width: 12%
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .googleImg {
+        width: 10%
+    }
+}
