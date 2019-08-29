@@ -5,11 +5,13 @@
 
 html {
     height: 100%;
+    width: 100%;
 }
 
 body {
     margin: 0;
     min-height: 100%;
+    min-width: 100%;
 }
 
 .container {
@@ -42,7 +44,7 @@ body {
 .navLinks > a:link, .navLinks > a:visited, .navLinks > a:hover, .navLinks > a:active {
     text-decoration: none;
     color: rgb(249, 249, 249);
-    margin-right: 4%;
+    margin-right: 6%;
     float: right;
     font-size: 75%;
 }
@@ -73,24 +75,34 @@ body {
 
 .navLinks2 > a:link, .navLinks2 > a:visited, .navLinks2 > a:hover, .navLinks2 > a:active {
     text-decoration: none;
-    margin-right: 8%;
     color: rgb(0 0 0);
+    margin-right: 6%;
     float: right;
-    font-size: 80%;
+    font-size: 75%;
 }
 
 .navLinks2 {
     width: 100%;
-    grid-column: 6/9;
+}
+
+.headerBar2 {
+    grid-column: 1/9;
     grid-row: 3/4;
-    padding: 2% 2% 0 0;
+    display: flex;
+    justify-items: center;
+    align-items: center;
 }
 
 .content2 {
-    display: inline-block;
+    display: flex;
     text-align: center;
     grid-column: 2/8;
     grid-row: 4/5;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .disclaimer {
@@ -108,25 +120,29 @@ body {
 }
 
 .signUpButtonDiv {
-    display: flex;
-    grid-column: 2/8;
+    grid-column: 1/9;
     grid-row: 5/6;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
 }
 
 .signUpButton {
     display: inline-block;
-    grid-column: 2/5;
     font-size: 80%;
-    grid-row: 5/6;
-    margin: 7% 8% 7% 8%;
+    padding: 0;
+    width: 120px;
+    min-height: 30px;
 }
 
 .gSignUpButton {
     display: inline-block;
-    grid-column: 5/8;
-    grid-row: 5/6;
+    padding: 0;
     font-size: 80%;
-    margin: 7% 8% 7% 8%;
+    width: 120px;
+    min-height: 30px;
 }
 
 .gAuthSpan {
@@ -138,11 +154,6 @@ body {
 .captchaDiv {
     margin: 0 8% 4% 8%;
 }
-
-.checkBoxDiv {
-    margin-bottom: 4%;
-}
-
 .googleImg {
     width: 15%;
     margin: 0 5% 0 0;
@@ -156,14 +167,6 @@ body {
     .captchaDiv {
         margin: 0 14% 4% 14%;
     }
-
-    .signUpButton {
-        margin: 7% 8% 7% 20%;
-    }
-    
-    .gSignUpButton {
-        margin: 7% 20% 7% 8%;
-    }
     
 }
 
@@ -172,18 +175,19 @@ body {
         min-height: 535px;
     }
 
-    .signUpButton {
-        margin: 5% 8% 5% 20%;
+    .logo {
+        width: 22%;
     }
-    
-    .gSignUpButton {
-        margin: 5% 20% 5% 8%;
-    }
+
 }
 
 @media only screen and (min-width: 530px) {
     .googleImg {
         width: 12%
+    }
+
+    .logo {
+        width: 19%;
     }
 }
 
