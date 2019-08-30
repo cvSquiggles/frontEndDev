@@ -1,6 +1,11 @@
 *{
     padding: 0;
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration-line: none;
 }
 
 html {
@@ -21,7 +26,7 @@ body {
     height: 100vh;
     width: 100vw;
     grid-template-columns: repeat(8, 1fr);
-    grid-template-rows:  7% 40% 3% 42% 8%;
+    grid-template-rows:  7% 40% 3% 50%;
 }
 
 .headerBar {
@@ -120,8 +125,6 @@ body {
 }
 
 .signUpButtonDiv {
-    grid-column: 1/9;
-    grid-row: 5/6;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -148,10 +151,16 @@ body {
     display: flex;
     align-content: center;
     justify-content: center;
+    align-items: center;
+    justify-items: center;
 }
 
 .captchaDiv {
     margin: 0 8% 4% 8%;
+}
+
+.checkBoxDiv {
+    margin-bottom: 2%;
 }
 
 .googleImg {
@@ -186,6 +195,12 @@ body {
         width: 19%;
     }
 
+}
+
+@media only screen and (min-width: 550px) {
+    .checkBoxDiv {
+        margin: 0 8% 2% 8%;
+    }
 }
 
 @media only screen and (min-width: 600px) {
@@ -276,5 +291,74 @@ body {
         display: flex;
         justify-items: center;
         align-items: center;
+        margin-right: 4%;
     }
+
+    .content2 {
+        display: flex;
+        text-align: left;
+        grid-column: 2/3;
+        grid-row: 2/3;
+        padding-left: 4%;
+        padding-right: 10%;
+        align-items: left;
+        align-content: left;
+        justify-items: left;
+        justify-content: left;
+        flex-wrap: wrap;
+    }
+
+    .disclaimer {
+        font-size: 85%;
+    }
+    
+    .signUpTopper {
+        margin-bottom: 10%;
+    }
+
+    .signUp {
+        font-size: 150%;
+    }
+    
+    .signUpInput {
+        border: solid .2px;
+        margin-left: -2%;
+        margin-bottom: 10%;
+        min-width: 100%;
+        height: 35px;
+        padding: 2%;
+    }
+
+    .captchaDiv {
+        margin: 0 0 10% 0;
+    }
+    .checkBoxDiv {
+        margin: 0 0 5% 0;
+    }
+
+    .signUpButtonDiv {
+        display: flex;
+        align-items: left;
+        justify-content: left;
+        align-content: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    
+    .signUpButton {
+        font-size: 80%;
+        height: 40px;
+        width: 100%;
+        margin-bottom: 2%;
+    }
+    
+    .gSignUpButton {
+        font-size: 80%;
+        width: 100%;
+        height: 40px;
+        margin-top: 2%;
+    }
+    
+
 }
